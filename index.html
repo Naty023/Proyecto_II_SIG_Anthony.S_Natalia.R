@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+
+
+<style>
+    .justificado-con-margen {
+        text-align: justify;
+        margin-left: 30px; /* Margen izquierdo */
+        margin-right: 30px; /* Margen derecho */
+        font-size: 20px;
+    }
+ </style>
+<style>
+    .Subtjustificado{
+        text-align: justify;
+        margin-left: 20px; /* Margen izquierdo */
+        margin-right: 10px; /* Margen derecho */
+        font-size: 20px;
+    }
+</style>
+
+<style>
+    /* Define una regla de estilo para párrafos con espacio entre líneas personalizado */
+    p {
+      line-height: 1.5; /* Ajusta el valor según tus preferencias, 1.5 es un ejemplo */
+    }
+  </style>
+
+<style>
+    nav a {
+        font-size: 30px; /* Ajusta el valor según el tamaño de fuente deseado */
+    }
+</style>
+
+ 
+<head>
+    <title>Ciudades con mejor clima de Perú</title>
+    <link rel="Stylesheet" href="diseñoWeb.css">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <p class="logo">Clima de Perú</p>
+                <nav>
+                    <div style="margin-left: 1010px;">
+                    <a href="#metodologia">Metodología</a>
+                    </div>
+                </nav>
+            </div>
+        </header> 
+        <section id="port">
+                <h1>¡Conoce las ciudades con los mejores climas de Perú!</h1>
+                <div style="text-align: center;">
+                    <button>Ver ciudades</button>
+                    <script>
+                        // Selecciona el botón y agrega un evento click para redireccionar al hacer clic
+                        document.querySelector("button").addEventListener('click', function() {
+                            window.location.href = "ciudades.html";
+                        });
+                    </script>
+                </div>
+                
+        </section>
+        <section id="peru">
+                <div class="Subtjustificado">   
+                    <h2>¿Conoces <span 
+                        class="color-acento">Perú</span>?</h2>
+                </div>
+                <div class="justificado-con-margen">
+                    <img src="imagenes/Peru_-_Regions.jpg" alt="Descripción de la imagen">
+                    <p>Perú, es un país ubicado en el continente sudamericano, el cual abarca un área de 1,285,220 kilómetros cuadrados, 
+                        lo que lo clasifica como una nación de considerablemente extensa.
+                        El país peruano alberga a una población de aproximadamente 33,715,471 individuos, 
+                        ubicándose en la posición 44 en la lista de países con respecto a su número de habitantes, 
+                        en una lista que comprende 196 naciones. Además, exhibe una densidad poblacional moderada, 
+                        con alrededor de 26 personas por kilómetro cuadrado.
+                        <br>-La capital de Perú es Lima, y su moneda oficial es el Sol.
+                    </p>
+                </div>
+        </section>
+
+        <section id="metodologia">
+            <div class="Subtjustificado">
+                <div style="margin-left: 10px;">
+                    <h2>Metodología</h2>
+                </div>
+                <div class="justificado-con-margen">
+                <p><u>Adquisición de Datos Geoespaciales:</u>
+                    Descargar las capas de datos de temperaturas máximas, temperaturas mínimas y precipitaciones desde la página oficial de Diva GIS, garantizando la calidad y fiabilidad de los datos.
+                    <br><br><u>Preparación y Procesamiento de Datos:</u>
+                    Importar las capas de datos geoespaciales y convertir las ciudades y las fronteras de Perú en formatos vectoriales para su posterior análisis.
+                    Utilizar el mapa mundial como referencia para recortar las áreas de interés, centrándose en Perú, utilizando las herramientas de máscara disponibles en Grass Gis.
+                    <br><br><u>Análisis de las Condiciones Climáticas:</u>
+                    Simplificar los datos de temperatura para identificar y mapear las zonas con temperaturas entre 10 y 30 grados centígrados, considerando tanto las temperaturas máximas como las mínimas.
+                    Realizar un análisis de las precipitaciones y definir las áreas con una precipitación anual de 15 mm/hora o menos.
+                    <br><br><u>Integración de Datos y Resultados:</u>
+                    Combinar los resultados de temperatura y precipitación para identificar las áreas que cumplen con los criterios del mejor clima en Perú.
+                    Generar un mapa de las áreas con el clima más favorable, resaltando las ciudades y ubicaciones específicas que cumplen con los criterios establecidos.
+                </p>
+                </div>
+            </div>
+        </section>        
+        <footer>
+            <p>©TEC. NSRS ASSV 2023</p>
+</footer>
+    </body>
+</html>

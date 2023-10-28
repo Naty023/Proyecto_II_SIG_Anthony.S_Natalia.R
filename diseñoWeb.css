@@ -1,0 +1,232 @@
+
+/*------------------------------------Pagina principal---------------------------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   margin : 0; 
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.7em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{ list-style: none; }
+li{ font-size: 1.25em; }
+
+/*---------------Acomoda loss textos con imágenes a los lados---------------*/
+.justificado-con-margen {
+    display: flex; /* Usamos flexbox para alinear la imagen y el párrafo horizontalmente */
+    align-items: center; /* Centramos verticalmente el contenido */
+  }
+  
+  .justificado-con-margen img {
+    width: 200 ; /* Tamaño de la imagen, ajusta según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el párrafo */
+  }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color:coral;
+}
+
+button:hover{
+    background-color:brown;
+    color: black;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{ color: coral; }
+
+header{
+    background-color:rgb(245, 245, 245);
+}
+
+.logo {
+    margin: 0;
+    padding: 50px;
+    padding-left: 100px;
+    font-weight: bold;
+    color: coral;
+    font-size: 4em;
+}
+.metodologia{
+    margin: 0;
+    padding-left: 300px;
+    font-weight: bold;
+    color: coral;
+    font-size: 3em;
+}
+/*   . logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: coral;
+    font-size: 2em;
+}*/
+
+header.container{
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    align-items: center;
+    /*padding: 20px 0;*/
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    background-color: coral;
+    color: white;
+}
+
+#port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: coral;
+    color: white;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/machu-picchu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#peru.container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#peru.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+@media (screen-width: 720px){
+    header.container{
+        flex-direction: row;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+}
+/*------------------------------------Pagina de las ciudades---------------------------------------*/
+
+/* Estilo para el contenedor de título y logo */
+.titulo-y-logo {
+    display: flex; /* Utiliza flexbox para controlar la disposición de elementos internos */
+    justify-content: space-between; /* Coloca el título a la derecha y la imagen a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+}
+/* Estilo para el título (h1) */
+.titulo {
+    background-color: white;
+    color: coral;
+    margin-left: 100px;
+    /* Agrega estilos según sea necesario */
+}
+
+/* Estilo para la imagen con la clase "imagen-izquierda" */
+.imagen-derecha-logo {
+    max-width: 200px; /* Limita el ancho máximo de la imagen a un valor específico */
+    margin-right: 80px; /* Agrega un margen a la derecha de la imagen para separarla del título */
+    margin-top: 10px;
+}
+.subtitles-fomat{ 
+    color: coral; 
+    background-color: brown;
+    font-size: 30px;
+}
+
+/* Estilo para el contenedor de contenido */
+.texto-Izquierda{
+    flex: 1; /* Permite que el texto ocupe todo el espacio disponible a la izquierda */
+}
+
+/* Estilo para la imagen con la clase "imagen-izquierda" */
+.imagen-izquierda {
+    max-width: 40%; /* Limita el ancho máximo de la imagen a un valor específico */
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: solid 5px coral;
+    display: flex; /* Utiliza flexbox para controlar la disposición de elementos internos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+/*_________Colocar texto a la izquierda e imagen la derecha y ________*/
+.texto_imagen {
+    display: flex; /* Utiliza flexbox para controlar la disposición de elementos internos */
+    justify-content: space-between; /* Coloca el título a la derecha y la imagen a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.container2{
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+}
+/* Estilo para el título (h1) */
+.texto {
+    background-color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+/*______Estilo imagenes de la derecha____*/
+.imagen-derecha {
+    max-width: 40%; /* Limita el ancho máximo de la imagen a un valor específico */
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
+    margin-left: 20px;
+    border: solid 5px coral;
+    display: flex; /* Utiliza flexbox para controlar la disposición de elementos internos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/*__________________________________________________________________*/
+
+
+
